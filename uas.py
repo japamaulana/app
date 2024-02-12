@@ -43,15 +43,6 @@ df_selection = df.query(
 st.title(":bar_chart: Bicycle Rent Dashboard")
 st.markdown("##")
 
-col1, col2 = st.columns(2)
-
-with col1:
-    st.header("Nama")
-    st.text("Muhammad Japa Maulana")
-with col2:
-    st.header("Nim")
-    st.text("10122483")
-
 # TOP KPI's
 total_cnt = int(df_selection["cnt"].sum())
 average_rent_by_cnt = round(df_selection["cnt"].mean(), )
