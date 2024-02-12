@@ -43,6 +43,8 @@ df_selection = df.query(
 st.title(":bar_chart: Bicycle Rent Dashboard")
 st.markdown("##")
 
+st.markdown('Informasi Kumpulan Data:Sistem berbagi sepeda adalah generasi baru penyewaan sepeda tradisional di mana seluruh proses dari keanggotaan, penyewaan, dan pengembalian kembali menjadi otomatis. Melalui sistem ini, pengguna dapat dengan mudah menyewa sepeda dari posisi tertentu dan kembali ke posisi lain. Saat ini, ada sekitar lebih dari 500 program berbagi sepeda di seluruh dunia yang terdiri dari lebih dari 500 ribu sepeda. Saat ini, ada minat besar dalam sistem ini karena peran penting mereka dalam masalah lalu lintas, lingkungan dan kesehatan.Terlepas dari aplikasi dunia nyata yang menarik dari sistem berbagi sepeda, karakteristik data yang dihasilkan oleh sistem ini membuatnya menarik untuk penelitian. Berbeda dengan layanan transportasi lain seperti bus atau kereta bawah tanah, durasi perjalanan, keberangkatan dan posisi kedatangan secara eksplisit dicatat dalam sistem ini. Fitur ini mengubah sistem berbagi sepeda menjadi jaringan sensor virtual yang dapat digunakan untuk merasakan mobilitas di kota. Oleh karena itu, diharapkan sebagian besar peristiwa penting di kota dapat dideteksi melalui pemantauan data ini.Informasi Atribut: Baik hour.csv dan day.csv memiliki bidang berikut, kecuali hr yang tidak tersedia di day.csv')
+
 # TOP KPI's
 total_cnt = int(df_selection["cnt"].sum())
 average_rent_by_cnt = round(df_selection["cnt"].mean(), )
